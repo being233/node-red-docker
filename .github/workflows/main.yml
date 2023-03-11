@@ -4,8 +4,10 @@ name: Docker Build
 
 # Controls when the action will run. 
 on:
-  release: 
-    types: [published]
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -15,8 +17,8 @@ jobs:
     env:
       # Setting the defaults up front
       LATEST_NODE: 16
-      DEFAULT_IMAGE: nodered/node-red
-      DEV_IMAGE: nodered/node-red-dev
+      DEFAULT_IMAGE: s9r0ut/node-red
+      DEV_IMAGE: s9r0ut/node-red
     runs-on: ubuntu-latest
 
     strategy:
