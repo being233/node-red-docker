@@ -17,8 +17,8 @@ jobs:
     env:
       # Setting the defaults up front
       LATEST_NODE: 16
-      DEFAULT_IMAGE: s9r0ut/node-red
-      DEV_IMAGE: s9r0ut/node-red
+      DEFAULT_IMAGE: s9r0ut/nodered
+      DEV_IMAGE: s9r0ut/nodered
     runs-on: ubuntu-latest
 
     strategy:
